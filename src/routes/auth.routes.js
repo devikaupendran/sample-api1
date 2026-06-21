@@ -10,6 +10,7 @@ const {
   logout
 } = require("../controllers/auth.controller");
 
+const { protect } = require("../middleware/auth.middleware");
 
 router.post("/register", register);
 router.post("/login", login);
